@@ -69,6 +69,7 @@ jobs:
         with:
           command: build
           args: --release --locked --target ${{ matrix.build.TARGET }}
+          use-cross: ${{ matrix.build.OS == 'ubuntu-20.04' }}
 
       - name: Publish to NPM
         shell: bash
