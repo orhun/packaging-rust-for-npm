@@ -129,11 +129,12 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Publish the package
+        continue-on-error: true
         shell: bash
         run: |
           cd npm/app
           yarn install # requires optional dependencies to be present in the registry
           yarn build
-          npm publish --access public
+          npm publish --access public --dry-run
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
