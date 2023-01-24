@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish-npm-binaries:
-    name: Publish target-specific NPM packages
+    name: Publish NPM packages
     runs-on: ${{ matrix.build.os }}
     strategy:
       fail-fast: false
