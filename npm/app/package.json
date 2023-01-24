@@ -14,7 +14,6 @@
     "url": "git+https://github.com/orhun/packaging-rust-for-npm"
   },
   "author": "Orhun Parmaksız <orhunparmaksiz@gmail.com>",
-  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/orhun/packaging-rust-for-npm/issues"
   },
